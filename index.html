@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bismillah Barber Shop | Haircuts, Fades & Beard Grooming</title>
+<meta name="description" content="Bismillah Barber Shop - stylish haircuts, clean fades, beard grooming and men's personal care. Request an appointment online.">
+<meta property="og:title" content="Bismillah Barber Shop">
+<meta property="og:description" content="Look sharp. Feel confident. Haircuts, fades and beard grooming for men.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap bar">
+  <a href="#home" class="logo">✂ <span>BISMILLAH</span> BARBER SHOP</a>
+  <button id="menuBtn" class="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#team">Our Team</a><a href="#prices">Price List</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    <a href="#booking" class="btn">Book Now</a>
+  </nav>
+</div></header>
+
+<section id="home" class="hero"><div class="wrap">
+  <h1>LOOK SHARP.<br><span>FEEL CONFIDENT.</span></h1>
+  <p>Welcome to Bismillah Barber Shop — your destination for stylish haircuts, clean fades, beard grooming, and professional men's grooming services.</p>
+  <a href="#booking" class="btn">Book an Appointment</a> <a href="#services" class="btn ghost">Explore Our Services</a>
+</div></section>
+
+<section id="about" class="light"><div class="wrap two">
+  <div id="aboutImg" class="imgbox"></div>
+  <div><h2>About Bismillah Barber Shop</h2>
+  <p>A welcoming place to request haircuts, beard grooming and personal styling. We listen to your style preferences and keep the shop clean and professionally presented.</p>
+  <ul class="ticks"><li>Attention to your style preferences</li><li>Haircut and beard grooming services</li><li>A welcoming customer experience</li><li>Cleanliness and professional presentation</li></ul></div>
+</div></section>
+
+<section class="dark"><div class="wrap two">
+  <div id="ownerImg" class="imgbox"></div>
+  <div><h2>MEET OUR OWNER — MUHAMMAD ARFAN</h2>
+  <p>Muhammad Arfan is the owner of Bismillah Barber Shop and a member of its barbering team. He is committed to creating a welcoming grooming experience and helping customers choose haircuts and styles that suit their preferences.</p>
+  <dl id="ownerFacts"></dl></div>
+</div></section>
+
+<section id="services" class="light"><div class="wrap"><h2 class="c">Our Services</h2><div id="serviceList"></div></div></section>
+
+<section id="team" class="dark"><div class="wrap"><h2 class="c">Our Barber Team</h2><div id="teamList" class="grid"></div></div></section>
+
+<section id="prices" class="light"><div class="wrap"><h2 class="c">Price List</h2>
+  <table id="priceTable"><thead><tr><th>Service</th><th>Price</th></tr></thead><tbody></tbody></table>
+  <p class="note">Prices are suggested placeholders until confirmed by the shop.</p></div></section>
+
+<section id="gallery" class="dark"><div class="wrap"><h2 class="c">Gallery</h2><div id="galleryList" class="gal"></div></div></section>
+
+<section id="booking" class="light"><div class="wrap narrow"><h2 class="c">Request an Appointment</h2>
+  <p class="c">This is an appointment <b>request</b>. It is not confirmed until the shop replies.</p>
+  <form id="bookForm" novalidate>
+    <label>Name<input id="fName" required><small class="err"></small></label>
+    <label>Phone number<input id="fPhone" type="tel" required><small class="err"></small></label>
+    <label>Service<select id="fService" required></select><small class="err"></small></label>
+    <label>Barber<select id="fBarber" required></select><small class="err"></small></label>
+    <label>Preferred date<input id="fDate" type="date" required><small class="err"></small></label>
+    <label>Preferred time<input id="fTime" type="time" required><small class="err"></small></label>
+    <label class="full">Additional notes<textarea id="fNotes" rows="3"></textarea></label>
+    <button class="btn full" type="submit">Review Request</button>
+  </form>
+  <div id="review" hidden></div>
+</div></section>
+
+<section class="dark"><div class="wrap"><h2 class="c">Testimonials</h2><div id="testiList" class="grid"></div></div></section>
+
+<section id="contact" class="light"><div class="wrap"><h2 class="c">Contact Us</h2>
+  <div id="contactList" class="grid"></div>
+  <div id="contactBtns" class="c"></div><div id="map"></div></div></section>
+
+<footer><div class="wrap grid">
+  <div><div class="logo">✂ <span>BISMILLAH</span> BARBER SHOP</div><p>Haircuts, fades, beard grooming and men's personal care.</p></div>
+  <div><h4>Explore</h4><a href="#about">About</a><a href="#services">Services</a><a href="#team">Our Team</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+  <div><h4>Services</h4><div id="footServices"></div></div>
+  <div><h4>Contact &amp; Social</h4><div id="footContact"></div></div>
+</div><p class="copy">© <span id="year"></span> Bismillah Barber Shop. All rights reserved.</p></footer>
+
+<div id="lightbox" hidden><button aria-label="Close">✕</button><div id="lbContent"></div></div>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
